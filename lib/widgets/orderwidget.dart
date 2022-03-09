@@ -46,7 +46,7 @@ class _OrderWidgetState extends State<OrderWidget> {
             trailing:Text(widget.request.total+" Rs.",style: TextStyle(color: UniversalVariables.orangeColor,fontSize: 20.0, fontWeight: FontWeight.bold,),) ,
           ),
 
-          createSatusBar(),
+          createStatusBar(),
           Container(
             padding: EdgeInsets.only(left: 20.0,top: 0.0),
             child: Column(
@@ -62,7 +62,7 @@ class _OrderWidgetState extends State<OrderWidget> {
     );
   }
 
-  createSatusBar(){
+  createStatusBar(){
     return Container(
       height: 100.0,
       child: Stepper(
